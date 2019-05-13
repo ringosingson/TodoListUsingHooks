@@ -18,11 +18,16 @@ export default function TodoApp() {
       id: 2,
       task: "Wash your Face",
       completed: true
+    },
+    {
+      id: 3,
+      task: "Dress up",
+      completed: true
     }
   ];
   const [todos, setTodos] = useState(initialTodos);
   const addTodo = newTodoText => {
-    setTodos([...todos, { id: 3, task: newTodoText, completed: false }]);
+    setTodos([...todos, { id: 4, task: newTodoText, completed: false }]);
   };
   return (
     <Paper
